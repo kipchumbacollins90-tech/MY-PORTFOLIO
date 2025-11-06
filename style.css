@@ -1,0 +1,193 @@
+/* ====== GENERAL STYLES ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  line-height: 2;
+}
+
+header {
+  background-color: #111;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+}
+
+.logo {
+  font-size: 2em;
+  font-weight: bold;
+}
+span{
+    color: red;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-size: 2em;
+}
+
+.nav-links a:hover {
+  color: #00bcd4;
+}
+
+/* ====== HERO SECTION ====== */
+.hero {
+  background: linear-gradient(to right, #111, #333);
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: auto;
+}
+
+.hero-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00bcd4;
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  margin-bottom: 20px;
+  font-size: 1.1em;
+}
+
+.btn {
+  background-color: #00bcd4;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #51a700ff;
+}
+
+/* ====== ABOUT SECTION ====== */
+.about, .cv, .contact {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.about h2, .cv h2, .contact h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #12a7d4ff;
+}
+
+.about p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.05em;
+  color: #fff;
+}
+
+/* ====== CV SECTION ====== */
+.cv p {
+  margin-bottom: 15px;
+  color: #ffffffff;
+}
+
+/* ====== CONTACT SECTION ====== */
+.contact p a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+.contact p a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  color: #999;
+  font-size: 1.5em;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #00bcd4;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  background-color: #141414ff;
+  color: #f7f4f4ff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+
+/* ====== RESPONSIVE DESIGN ====== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+    .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .hero h2 {
+    font-size: 1.7em;
+  }
+
+  .about, .cv, .contact {
+    padding: 40px 5%;
+  }
+
+  .hero-img {
+    width: 120px;
+    height: 120px;
+  }
+}
